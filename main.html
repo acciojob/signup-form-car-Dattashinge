@@ -10,7 +10,7 @@
 	<!-- the entire body must be written by student -->
 	 <div class="container">
         <h2>User SignUp Form..!</h2>
-        <form action="Post">
+        <form method="Post">
             <label for="name">Enter Name:</label>
             <input type="text" id="name" required="yes" placeholder="Name">
             <br><br>
@@ -26,12 +26,11 @@
                 <input type="radio" id="gender_f" name="gender" value="female">
                 <label for="gender_female">Female</label>
                 <br>
-                <input type="radio" id="gender_other" name="gender" value="other">
-                <label for="gender_other">Other</label>
-                <br> <br>
+
+                <br>
             </div>
 
-            <label for="car_brands">Select Car Brands :</label>
+            <label for="cars">Select Car Brands :</label>
             <br>
             <select name="car_brands" id="cars" multiple size="6" required="yes" >
                 <option value="" disabled selected>Choose an option</option>
@@ -51,24 +50,24 @@
             </label>
             <br><br>
 
-            <label for="DBO">Date Of Birth:</label>
-            <input type="date" id="DBO" required="yes">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" required="yes">
             <br><br>
 
-            <label for="phoneNNumber">Phone Number:</label>
-            <input type="tel" id="phoneNNumber" required="yes" placeholder="xxx-xxx-xxxx">
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" required="yes" placeholder="xxx-xxx-xxxx">
             <br><br>
 
             <label for="password">Password:</label>
             <input type="password" id="password" required="yes" placeholder="Password">
             <br><br>
 
-            <label for="i agree">I Agree to the TOS:</label>
+            <label for="tos">I Agree to the TOS:</label>
             <input type="radio" required="yes" id="tos" >
             <br><br>
 
             <input 
-        type="submit" 
+       type="button"
         id="submit" 
         value="Submit"
       />
